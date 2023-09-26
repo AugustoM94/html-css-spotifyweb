@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper">
         <div id="call-to-action" class="f-end">
-            <a href="#" class="button-call">Effettua l'upgrade</a>
+           <button class="button-call" type="button">Effettua L'upgrade</button>
         </div>
           <main class="flex">
              <nav id="side-bar" class="column">
@@ -71,15 +71,45 @@
 
         </main>
     </div>
-         <div class="playbar">
-           <div class="f-center">
-                  <img src="img/sinister.jpeg" alt="sinister">
-                  <p class="txt-white">Sinister <br><small class="txt-item">Brano Nome</small></p>     
-           </div>
-          <div>
-
-          </div>
-
+    <section id="player-section" class="space-between">
+        <ul>
+            <li><img src="img/sinister.jpeg" alt="Sinister Cover"></li>
+            <li>
+                <div>
+                    <span>Sinister</span><br>
+                    <span>Brano Nome</span>
+                </div>
+            </li>
+            <li><i class="fa-regular fa-heart"></i></li>
+            <li><i class="fa-regular fa-folder"></i></li>
+        </ul>
+        <div>
+            <ul class="player-buttons">
+                     <li><i class="fa-solid fa-shuffle"></i></li>
+                     <li><i class="fa-solid fa-backward-step"></i></li>
+                     <li><i class="fa-regular fa-circle-play"></i></li>
+                     <li><i class="fa-solid fa-forward-step"></i></li>
+                     <li><i class="fa-solid fa-rotate-right"></i></li>
+            </ul>
+            <ul class="player-progression-bar">
+                <li><span>0:25</span></li>
+                <li class="p-relative">
+                    <div class="thin-bar long"></div>
+                    <li><span>4:35</span></li>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="player-settings">
+                  <li><i class="fa-solid fa-list"></i></li>
+                  <li><i class="fa-solid fa-desktop"></i></li>
+                  <li><i class="fa-solid fa-volume-high"></i></li>
+                   <li class="p-relative">
+                <div class="thin-bar short"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
   </div>
 </body>
 </html>
