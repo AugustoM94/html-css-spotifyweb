@@ -105,11 +105,29 @@ main {
     top: 0;
     right: 0;
     z-index: 999;
-    background-color: var(--color-grey);
+    background-color: var(--color-dark-grey);
+}
+.button-call {
+    width: 200px;
+     padding: 20px 20px;
+     padding-bottom: 2px;
+     border-radius: 20px;
+     color: var(--color-white);
+     text-decoration: none;
+     text-transform: uppercase;
+     border: 1px solid (--color-white);
 }
 /* playbar */
 .playbar {
     background-color: var(--color-dark-grey);
+}
+.playbar img {
+    width: 50px;
+    padding: 5px ;
+}
+.playbar small {
+    font-size: 0.8rem;
+    display: inline-block;
 }
 /* side-bar */
 #side-bar img {
@@ -119,7 +137,7 @@ main {
 }
 #side-bar a {
     margin-right: 30px;
-    font-size: 2em;
+    font-size: 1.8em;
     text-decoration: none;
     font-weight: bold;
 }
