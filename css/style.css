@@ -76,6 +76,7 @@ main {
     min-height: 480px;
     background-color: var(--color-black);
     padding: 10px;
+    transition: all 1s;
 
 }
 #main-content {
@@ -85,6 +86,7 @@ main {
     padding-top: 70px;
     padding: 0 10px;
     background-color: var(--color-dark-color);
+    transition: all 1s;
 }
 #player-section {
     width: 100%;
@@ -203,7 +205,7 @@ transition: all 1s;
 
 #player-section img {
     width: 50px;
-    margin: 10px 10px;
+    margin: 10px 5px;
 }
 
 #player-section span {
@@ -333,8 +335,6 @@ transition: all 1s;
     font-size: 1.5em;
     margin: 5px;
 }
-
-
 hr {
     width: 100%;
 }
@@ -430,6 +430,33 @@ hr {
 }
 .circle {
     border-radius: 50%;
+}
+/* bonus */
+#main-content .item-circle {
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s;
+    opacity: 0;
+}
+.cover-container {
+    position: relative;
+    cursor: pointer;
+}
+.item-circle:hover {
+   display: block;
+    opacity: 1;
+   cursor: pointer;
+   color: var(--color-white);
+}
+
+li:hover {
+    cursor: pointer;   
+ }
+.song {
+    max-height: 25px;
 }
 /* media query */
 @media screen and (max-width: 992px) {
