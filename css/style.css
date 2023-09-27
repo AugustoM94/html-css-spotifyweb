@@ -98,6 +98,12 @@ main {
 h3 {
     padding: 5px;
 }
+.display-none {
+    display: none;
+}
+img {
+    display: block;
+}
 /* Utility Flex */
 .flex {
     display: flex;
@@ -151,7 +157,7 @@ h3 {
     top: 0;
     right: 0;
     z-index: 999;
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-black);
 }
 .button-call {
      height: 50%;
@@ -165,7 +171,10 @@ h3 {
      color: var(--color-white);
      border: 1px solid white;  
     }
-
+.button-call:hover {
+transform: scale(1.1);
+transition: all 1s;
+}
     
 /* player section */
 #player-section {
@@ -289,7 +298,7 @@ h3 {
 #side-bar img {
     max-width: 120px;
     margin: 10px 5px 10px 10px;
-    display: inline-block;
+    display: block;
 }
 #side-bar a {
     margin-right: 30px;
@@ -324,9 +333,7 @@ h3 {
     font-size: 1.5em;
     margin: 5px;
 }
-#side-bar small {
-    padding: 5px 10px;
-}
+
 
 hr {
     width: 100%;
@@ -435,6 +442,9 @@ hr {
         padding: 10px;
         transition: all 1s;
     }
+#main-content .nav-bar {
+        transition: all 1s;
+    }
 }
 @media screen and (max-width: 768px) {
 
@@ -451,18 +461,58 @@ hr {
     .wrap{
         flex-wrap: wrap;
     }
+#main-content {
+    width: calc(100% - 50px);
+}
+#call-to-action {
+    width: calc(100% - 50px)
+}
 #main-content .cover-item {
         width: calc(100% / 2 - 10px);
         padding: 10px;
-        transition: all 1s;
+        transition: all 2s;
     }
 #side-bar {
     width: 50px;
+    text-align: center;
+    transition: all 2s;
 }
-#side-bar .side-bar-top  {
+#side-bar .logo-content:first-child{
     display: none;
 }
-#main-content {
-    width: calc(100% -50px);
+#side-bar .display-none{
+    display: block;
+    width: 35px;
+   margin-left: 2px;
+}
+#side-bar .item-title > span {
+display: none;
+}
+#side-bar  .playlist{
+    display: none;
+}
+#side-bar .side-bar-bottom > span {
+    display: none;
+    }
+#side-bar .pad-10-tb > span {
+        display: none;
+}
+#side-bar .install-app > span {
+    display: none;
+}
+.side-bar-top {
+    height: calc(100% - 120px);
+}
+.side-bar-bottom {
+    height: 120px;
+}
+hr {
+    display: none;
+}
+#player-section .thin-bar.short {
+    width: 20px;
+}
+#player-section i{
+padding: 3px;
 }
 }
