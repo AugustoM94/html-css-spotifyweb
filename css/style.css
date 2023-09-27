@@ -294,6 +294,10 @@ transition: all 1s;
 #player-section .player-settings {
     margin-top: 30px;
 }
+.song {
+    max-height: 25px;
+    max-width: 300px;
+}
 /* side-bar */
 #side-bar img {
     max-width: 120px;
@@ -465,9 +469,7 @@ li:hover {
     cursor: pointer; 
     color: var(--color-white);  
  }
-.song {
-    max-height: 25px;
-}
+
 /* media query */
 @media screen and (max-width: 992px) {
 
@@ -493,6 +495,10 @@ li:hover {
         padding: 10px;
         transition: all 1s;
     }
+.song {
+        max-height: 25px;
+        max-width: 200px;
+}
 }
 @media screen and (max-width: 576px) {
     .wrap{
@@ -551,5 +557,8 @@ hr {
 }
 #player-section i{
 padding: 3px;
+}
+#player-section i {
+    padding: 0px;
 }
 }
