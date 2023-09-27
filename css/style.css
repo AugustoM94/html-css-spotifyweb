@@ -30,6 +30,9 @@ body {
 .txt-grey {
     color: var(--color-grey);
 }
+.txt-lightgrey {
+    color: var(--color-light-grey);
+}
 .txt-item {
     color: var(--color-item);
 }
@@ -123,6 +126,12 @@ main {
     align-content: flex-start;
 }
 .space-between {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+}
+.space-between-center {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -349,9 +358,62 @@ hr {
 /* Recently */
 #recently img {
     width: 100%;
-
+    display: block;
 }
-.cover-container {
+#recently {
+    padding: 10px;
+}
+#recently {
+    width: 100%;
+}
+#recently .cover-item {
     width: calc(100% / 6 -10px);
     padding: 10px;
+}
+#recently p {
+    font-size: 0.7rem;
+    padding: 5px;
+}
+/* For You */
+#foryou {
+    width: 100%;
+    padding: 10px;
+}
+#foryou h2 {
+    margin-top: 20px;
+}
+#foryou p {
+    font-size: 0.7rem;
+    padding: 5px;
+}
+#foryou img {
+    width: 100%;
+    display: block;
+}
+#foryou .cover-item {
+    width: calc(100% / 6 - 10px);
+    padding: 10px;
+}
+/* artist popular */
+#artist-popular {
+    width: 100%;
+    padding: 10px;
+}
+#fartist-popular h2 {
+    margin-top: 20px;
+}
+#artist-popular p {
+    font-size: 0.7rem;
+    padding: 5px;
+}
+#artist-popular img {
+    width: 100%;
+    display: block;
+}
+#artist-popular .cover-item {
+    width: calc(100% / 6 - 10px);
+    padding: 10px;
+}
+.circle {
+    border-radius: 50%;
 }
