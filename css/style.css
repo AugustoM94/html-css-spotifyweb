@@ -431,7 +431,7 @@ hr {
 }
 /* bonus */
 #main-content .item-circle {
-    font-size: 60px;
+    font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -444,13 +444,11 @@ hr {
     cursor: pointer;
 }
 
-.item-circle:hover {
+#main-content .cover-container:hover .item-circle {
    display: block;
-   cursor: pointer;
-   transform: scale(1.1);
 }
 .item-circle-visible {
-    font-size: 60px;
+    font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -460,7 +458,9 @@ hr {
 .cover-container:hover {
     transform: scale(1.1);    
 }
-
+.cover-list:hover .item-circle-visible{
+    display: none;
+}
 li:hover {
     cursor: pointer; 
     color: var(--color-white);  
