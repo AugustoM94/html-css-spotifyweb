@@ -33,12 +33,13 @@
                          <i class="fa-solid fa-lines-leaning fa-flip-horizontal txt-item"></i>
                          <span class="txt-item">La tua libreria</span>
                  </div>
+                 <div class="playlist">
                          <h3 class="txt-white pad-10-tb ">Playlist</h3>
                  <div class="pad-10-tb ">
                         <i class="fa-solid fa-plus"></i>
                         <span class="txt-item">Crea playlist</span>
                  </div>
-                    <ul class="playlist">
+                    <ul>
                         <li class="txt-item ">Nome Playlist</li>
                         <li class="txt-item ">Nome Playlist</li>
                         <li class="txt-item ">Nome Playlist</li>
@@ -46,7 +47,8 @@
                         <li class="txt-item ">Nome Playlist</li>
                         <li class="txt-item ">Nome Playlist</li>
                         <li class="txt-item ">Nome Playlist</li>
-                    </ul>  
+                    </ul> 
+                </div>  
                 </div>
                  <div class="side-bar-bottom"> 
                     <div class="f-end-column">
@@ -73,11 +75,10 @@
                             <li>Scopri</li>
                         </ul>
                     </nav>
-              
                <div id="recently">
                         <h2 class="txt-white pad-20-tb">Recently played</h2>
-                  <div class="cover-list space-between">
-                     <div class="cover-item ">
+                  <div class="cover-list space-between wrap">
+                     <div class="cover-item">
                           <div class="cover-container">
                                 <img  src="img/metal_lifting.jpg" alt="metal_lifting">
                                 <div class="item-circle"><i class="fa-solid fa-circle-play"></i></div>
@@ -143,7 +144,7 @@
         <section id="foryou">
                              <h2 class="txt-white  pad-10-tb">Creato per Augusto Marzo</h2>
                              <p class="txt-lightgrey">Più ascolti, più accurati saranno i suggerimenti</p>
-                    <div class="cover-list space-between">
+                    <div class="cover-list space-between wrap">
                         <div class="cover-item ">
                              <div class="cover-container">
                                    <img  src="img/marra1.webp" alt="Marracash">
@@ -224,7 +225,7 @@
             <ul class="player-progression-bar">
                 <li><span>0:25</span></li>
                 <li class="p-relative">
-                    <div class="thin-bar long"></div>
+                    <input class="thin-bar long" type="range" id="points" name="points" min="0" max="50" value="1">
                     <li><span>4:35</span></li>
                     </div>
                 </li>
