@@ -54,6 +54,12 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.mg-10-left {
+    margin-left: 10px;
+}
+.text-center {
+    text-align: center;
+}
 li {
    list-style: none;
 }
@@ -63,7 +69,9 @@ main {
 }
 #side-bar {
     width: 250px;
-    background-color: var(--color-dark-color);
+    height:100%;
+    min-height: 480px;
+    background-color: var(--color-black);
     padding: 10px;
 }
 #main-content {
@@ -71,7 +79,7 @@ main {
     overflow-y: auto;
     padding-top: 70px;
     padding: 0 10px;
-    background-color: var(--color-black);
+    background-color: var(--color-dark-color);
 }
 #player-section {
     width: 100%;
@@ -93,11 +101,24 @@ main {
 .f-end {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
-
+.f-end-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: center;
+}
 .f-center {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+.f-center-c {
+    display: flex;
+    justify-content: center;
     align-items: center;
     align-content: flex-start;
 }
@@ -105,6 +126,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    align-content: space-between;
+}
+.wrap {
+    flex-wrap: wrap;
 }
 /* call-to-action*/
 #call-to-action {
@@ -117,7 +142,8 @@ main {
     background-color: var(--color-dark-grey);
 }
 .button-call {
-     padding: 10px 30px;
+     height: 50%;
+     padding: 10px 20px 10px 20px;
      text-decoration: none;
      text-transform: uppercase;
      border-radius: 50px;
@@ -246,7 +272,7 @@ main {
 }
 /* side-bar */
 #side-bar img {
-    max-width: 40px;
+    max-width: 120px;
     margin: 10px 5px 10px 10px;
     display: inline-block;
 }
@@ -255,6 +281,19 @@ main {
     font-size: 1.8em;
     text-decoration: none;
     font-weight: bold;
+}
+#side-bar li {
+    padding: 5px;
+}
+.side-bar-top {
+    height: calc(100% - 80px);
+    overflow-y: hidden;
+}
+.side-bar-bottom {
+    height: 80px;
+}
+.playlist {
+    overflow-y: auto;
 }
 .item-title {
     padding: 5px;
@@ -273,16 +312,46 @@ main {
 #side-bar small {
     padding: 5px 10px;
 }
-.install-app {
-    margin-top: 90px;
-    left: 10px;
-    border-bottom: 1px solid #717171;
+
+hr {
+    width: 100%;
 }
-#side-bar .item-title:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-}
+
 #side-bar .fa-plus:hover {
     cursor: pointer;
     transform: scale(1.2);
+}
+#side-bar h3 {
+    margin-left: 10px;
+}
+
+#side-bar .item-title:hover {
+    border-left: 1px solid var(--color-highlight);
+    cursor: pointer;
+}
+/* nav-bar */
+.list-nav-bar {
+    margin-top: 80px;
+    font-size: 0.8rem;
+}
+.list-nav-bar li {
+    text-transform: uppercase;
+    color: var(--color-light-grey);
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.list-nav-bar li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--color-highlight);
+
+}
+/* Recently */
+#recently img {
+    width: 100%;
+
+}
+.cover-container {
+    width: calc(100% / 6 -10px);
+    padding: 10px;
 }
