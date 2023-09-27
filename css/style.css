@@ -248,9 +248,7 @@ transition: all 1s;
     cursor: pointer;
     transition: background-color .2s;
 }
-#player-section .thin-bar:hover {
-    color: var(--color-highlight);
-}
+
 
 #player-section .thin-bar.short {
     width: 100px;
@@ -433,27 +431,39 @@ hr {
 }
 /* bonus */
 #main-content .item-circle {
-    font-size: 70px;
+    font-size: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity .3s;
-    opacity: 0;
+    display: none;
+    color: var(--color-white);
 }
 .cover-container {
     position: relative;
     cursor: pointer;
 }
+
 .item-circle:hover {
    display: block;
-    opacity: 1;
    cursor: pointer;
-   color: var(--color-white);
+   transform: scale(1.1);
+}
+.item-circle-visible {
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+}
+.cover-container:hover {
+    transform: scale(1.1);    
 }
 
 li:hover {
-    cursor: pointer;   
+    cursor: pointer; 
+    color: var(--color-white);  
  }
 .song {
     max-height: 25px;
