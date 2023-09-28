@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&family=PT+Sans+Caption&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
 <link rel="stylesheet" href="style.css">
-    <title>I più ascoltati</title>
+    <title>Spotify-Ricerca</title>
 </head>
 <body>
     <div class="wrapper">
@@ -22,22 +22,42 @@
                     </div>
                     <div class="item-title">               
                           <i class="fa-solid fa-magnifying-glass txt-item"></i>
-                          <span class="txt-item">Cerca</span>
+                          <span class="txt-white">Cerca</span>
                    </div>
+                   <hr>
                    <div class="item-title mg-7-left">               
                          <i class="fa-solid fa-lines-leaning fa-flip-horizontal txt-item"></i>
                          <span class="txt-item ">La tua libreria</span>
                  </div>
-                 <div class="playlist">
-                         <h3 class="txt-white pad-10-tb ">Playlist</h3>
-                 <div class="pad-10-tb ">
-                        <i class="fa-solid fa-plus"></i>
-                        <span class="txt-item">Crea playlist</span>
+                 <div>
+                    <input class="btn-tris txt-white" type="button" value="Playlist">
+                    <input class="btn-tris txt-white" type="button" value="Artisti">
+                    <input class="btn-tris txt-white"  type="button" value="Album">
                  </div>
+                 <div class="playlist">
+                    <div class="space-between-center">
+                          <h3 class="txt-white pad-10-tb "><i class="fa-solid fa-magnifying-glass"></i></h3>
+                          <span class="txt-white">Recenti <i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
                     <ul>
-                        <li class="txt-item "><a href="#">Brani che ti piacciono</a></li>
-                        <li class="txt-item "><a href="#">Top 50</a></li>
-                        <li class="txt-item "><a href="#">Hot Hits</a></li>
+                        <div class="f-center-start"> 
+                        <li class="txt-item "><a href="#"><img src="../img/cure.jpeg" alt=""></a></li>
+                        <li><span class="txt-green">Brani che ti piacciono</span>
+                        <br>
+                        <span class="txt-lightgrey">Playlist &dot; 18 Brani</span></li>
+                    </div>
+                    <div class="f-center-start"> 
+                        <li class="txt-item "><a href="#"><img src="../img/marra1.webp" alt=""></a></li>
+                        <li><span class="txt-lightgrey">Noi Loro Gli Altri</span>
+                        <br>
+                        <span class="txt-lightgrey">Playlist &dot;  22   Brani</span></li>
+                    </div>
+                    <div class="f-center-start"> 
+                        <li class="txt-item "><a href="#"><img src="../img/gue-guesus-cover-album.jpg" alt="Guè"></a></li>
+                        <li><span class="txt-lightgrey">Guèsus</span>
+                        <br>
+                        <span class="txt-lightgrey">Playlist &dot; 19 Brani</span></li>
+                    </div>
                         <li class="txt-item "><a href="#">Nome playlist</a></li>
                         <li class="txt-item "><a href="#">Nome playlist</a></li>
                         <li class="txt-item "><a href="#">Nome playlist</a></li>
@@ -62,21 +82,135 @@
                         </div>
                   <div class="container">
                     <h1>Sfoglia tutto</h1>
-                    <div class="cover-list space-between">
+                    <div class="cover-list space-between-center wrap">
                         <div class="cover-item ">
                              <div class="cover-container bg-darkgreen">
                                    <h2 class="txt-white">Podcast</h2>
+                                   <img src="../img/cure.jpeg" alt="cure">
                             </div>
                         </div>
                             <div class="cover-item ">
                                 <div class="cover-container bg-violet">
                                       <h2 class="txt-white">Eventi dal vivo</h2>
-                                      <img src="../img/aquietplace.jpeg" alt="">
+                                      <img src="../img/aquietplace.jpeg" alt="aquietplace">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-3">
+                                      <h2 class="txt-white">Creata per <template></template></h2>
+                                      <img src="../img/einaudi.jpeg"alt="Einaudi">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-4">
+                                      <h2 class="txt-white">Nuove uscite</h2>
+                                      <img src="../img/metal_lifting.jpg" alt="metal">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-5">
+                                      <h2 class="txt-white">Estate</h2>
+                                      <img src="../img/mixdaily.jpeg" alt="mixdaily">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-6">
+                                      <h2 class="txt-white">Hip Hop</h2>
+                                      <img src="../img/player_left.jpg" alt="player">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-7">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-8">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-9">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-10">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-11">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-1">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-7">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-5">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
+                               </div>
+                            </div>
+                            <div class="cover-item ">
+                                <div class="cover-container bg-2">
+                                      <h2 class="txt-white">Dance/Elettronica</h2>
+                                      <img src="../img/radar.jpeg" alt="radar">
                                </div>
                             </div>
                         </div>
                   </div>
+     <footer>
+             <div class="container-footer space-between-center">
+                 <div>
+                       <ul>
+                            <li><a class="txt-white" href="#">Azienda</a></li>
+                            <li><a class="txt-lightgrey" href="#">Chi siamo</a></li>
+                            <li><a class="txt-lightgrey" href="#">Opportunità di lavoro</a></li>
+                            <li><a class="txt-lightgrey" href="#">For the Record</a></li>
+                        </ul>
+                </div>
+                 <div>
+                      <ul>
+                             <li><a class="txt-white" href="#">Community</a></li>
+                             <li><a class="txt-lightgrey" href="#">Per    artisti</a></li>
+                             <li><a class="txt-lightgrey" href="#">Sviluppatori</a></li>
+                             <li><a class="txt-lightgrey"  href="#">Pubblicità</a></li>
+                             <li><a class="txt-lightgrey"  href="#">Investitori</a></li>
+                             <li><a class="txt-lightgrey"  href="#">Venditori</a></li>
+                      </ul>
+                </div>
+                <div>
+                      <ul>
+                            <li><a class="txt-white" href="#">Link Utili</a></li>
+                            <li><a class="txt-lightgrey" href="#">App per cellulare gratuita</a></li>
+                            <li><a class="txt-lightgrey" href="#">Diriti del consumatore</a></li>
+                      </ul>
+                </div>
+                <div>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                </div>
+                    </div>
+               </footer>
       </section>
+  
         </main>
     </div>
     <section id="player-section" class="space-between-center">

@@ -375,6 +375,22 @@ hr {
     border-bottom: 1px solid var(--color-highlight);
 
 }
+.side-bar-top {
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    min-height: 200px;
+}
+.playlist {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+.nav-bar ul {
+    overflow-y: auto;
+}
 /* Recently */
 #recently img {
     width: 100%;
@@ -557,9 +573,7 @@ display: none;
 #side-bar .install-app > span {
     display: none;
 }
-.side-bar-top {
-    height: calc(100% - 120px);
-}
+
 .side-bar-bottom {
     height: 120px;
 }
