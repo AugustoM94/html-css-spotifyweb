@@ -18,12 +18,14 @@ body {
 	--color-light-grey: #C1C1C1;
 	--color-highlight: #ADFF2F;
     --color-item: #D2D2D2;
+    --call: #463289;
 }
 /* Uutility */
 .wrapper {
     width: 100%;
     height: 100vh;
 }
+
 .txt-white {
     color: var(--color-white);
 }
@@ -83,7 +85,7 @@ main {
     height: 100%;
     overflow-y: auto;
     padding-top: 70px;
-    padding: 0 10px;
+    padding: 20px 10px;
     background-color: var(--color-dark-color);
     transition: all 1s;
 }
@@ -159,29 +161,27 @@ img {
 /* call-to-action*/
 #call-to-action {
     width: calc(100% - 250px);
-    height: 60px;
+    height: 400px;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 999;
-    background-color: var(--color-black);
+    background-color: var(--call);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 .button-call {
+    width: 400px;
      height: 50%;
-     padding: 10px 20px 10px 20px;
+     padding: 15px 30px 15px 30px;
      margin-right: 10px;
      text-decoration: none;
-     text-transform: uppercase;
      border-radius: 50px;
-     background-color: transparent;
-     cursor: pointer;
-     color: var(--color-white);
-     border: 1px solid white;  
+     background-color: #2A2A2A;
+     display: inline;
+     margin-bottom: 10px;
     }
-.button-call:hover {
-transform: scale(1.1);
-transition: all 1s;
-}
+
     
 /* player section */
 #player-section {
@@ -259,6 +259,10 @@ transition: all 1s;
     width: 100px;
 }
 
+#player-section .thin-bar.long {
+    width: 300px;
+    margin-top: 10px;
+}
 
 #player-section .player-buttons i,
 #player-section .player-settings i {
@@ -299,10 +303,7 @@ transition: all 1s;
 #player-section .player-settings {
     margin-top: 30px;
 }
-.song {
-    max-height: 25px;
-    max-width: 300px;
-}
+
 /* side-bar */
 #side-bar img {
     width: 120px;
@@ -474,7 +475,31 @@ li:hover {
     cursor: pointer; 
     color: var(--color-white);  
  }
+/* Main content */
 
+.rewind i {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+.rewind i:hover {
+    cursor: pointer;
+}
+.item-up {
+    padding: 15px;
+    margin-left:500px;
+}
+.item-up i {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.container 
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
 /* media query */
 @media screen and (max-width: 992px) {
 
